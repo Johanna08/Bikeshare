@@ -1,6 +1,9 @@
+
 #<h1> Bikeshare investigation </h1>
 #date: 20200311
 #I investigated the bikeshare data of Chicago, New york and Wshington
+#date of refactoring 20200311
+#deleted all redundant information in code
 
 import time
 import pandas as pd
@@ -9,6 +12,7 @@ import pandas as pd
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
+
 
 cities = ['chicago', 'new york city', 'washington', 'all']
 months = ['january','february','march','april','may','june','july','august','september','october','november','december', 'all']
@@ -34,16 +38,7 @@ def get_filters():
 
 
 def load_data(city, month, day):
-    """
-    Loads data for the specified city and filters by month and day if applicable.
 
-    Args:
-        (str) city - name of the city to analyze
-        (str) month - name of the month to filter by, or "all" to apply no month filter
-        (str) day - name of the day of week to filter by, or "all" to apply no day filter
-    Returns:
-        df - pandas DataFrame containing city data filtered by month and day
-    """
 
     df = pd.read_csv(CITY_DATA[city])
 
@@ -77,7 +72,6 @@ def load_data(city, month, day):
 
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -109,7 +103,7 @@ def time_stats(df):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
@@ -131,7 +125,7 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+
 
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
@@ -150,7 +144,7 @@ def trip_duration_stats(df):
 
 
 def user_stats(df):
-    """Displays statistics on bikeshare users."""
+
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
