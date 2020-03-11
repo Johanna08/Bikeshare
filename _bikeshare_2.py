@@ -5,6 +5,7 @@
 #date of refactoring 20200311
 #deleted all redundant information in code
 
+
 import time
 import pandas as pd
 
@@ -15,7 +16,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 
 
 cities = ['chicago', 'new york city', 'washington', 'all']
-months = ['january','february','march','april','may','june','july','august','september','october','november','december', 'all']
+months = ['february','march','april','may','june','july','august','september','october','november','december', 'all']
 days =['1','2','3','4','5','6','7', 'all']
 
 def get_filters():
