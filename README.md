@@ -1,7 +1,8 @@
 ### Date created
  20200311
 
-### Bikeshare project
+### <b>Bikeshare project</b>
+ <b>This text is bold</b> 
 
 
 ### Bikeshare investigation of
@@ -14,7 +15,7 @@
 ### Files used
 chicago.csv
 new_york_city.csv
-washingotn.csv
+washington.csv
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
