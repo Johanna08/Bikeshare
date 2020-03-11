@@ -84,6 +84,7 @@ def time_stats(df):
 
     # display the most common month
     popular_month = df['month'].mode()[0]
+    second_popular_month = df['month'].mode()[1]
 
     print('Most Frequent Start Month:', popular_month)
 
