@@ -1,4 +1,5 @@
 #<h1> Bikeshare investigation </h1>
+#date: 20200311
 #I investigated the bikeshare data of Chicago, New york and Wshington
 
 import time
