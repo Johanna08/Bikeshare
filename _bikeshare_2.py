@@ -1,3 +1,5 @@
+#date of refactoring 20200311
+#deleted all redundant information in code
 import time
 import pandas as pd
 
@@ -137,7 +139,7 @@ def trip_duration_stats(df):
 
 
 def user_stats(df):
-    
+
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
