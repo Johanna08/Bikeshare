@@ -8,6 +8,8 @@
 - chicago
 - new york city
 - washington
+- popular month
+- etc.
 
 ### Files used
 chicago.csv
